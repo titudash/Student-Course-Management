@@ -1,0 +1,70 @@
+:root {
+  --primary: #3498db;
+  --primary-hover: #2980b9;
+  --secondary: #2ecc71;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --gray: #95a5a6;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.page-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 { color: var(--dark); margin-bottom: 1.5rem; }
+.text-center { text-align: center; }
+.mt-2 { margin-top: 1.5rem; display: inline-block; }
+
+/* Student Info Card */
+.student-info-card, .course-detail-card, .tech-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  border-left: 5px solid var(--primary);
+}
+.student-info-card h2 { margin-top: 0; color: var(--dark); }
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-secondary { background: var(--secondary); color: white; }
+.btn-outline { border: 1px solid var(--primary); color: var(--primary); }
+.btn-outline:hover { background: var(--primary); color: white; }
+.action-buttons { display: flex; gap: 1rem; }
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.course-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 1px solid #e1e8ed;
+}
+.course-id { color: var(--gray); font-size: 0.9rem; margin-bottom: 1rem; }
+.course-desc { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; }
+.error-404 { font-size: 5rem; color: #e74c3c; margin: 0; }
